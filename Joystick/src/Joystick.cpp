@@ -131,7 +131,7 @@ Joystick_::Joystick_(
 		tempHidReportDescriptor[hidReportDescriptorSize++] = 0x19;
 		tempHidReportDescriptor[hidReportDescriptorSize++] = 0x01;
 
-		// USAGE_MAXIMUM (Button 32)            
+		// USAGE_MAXIMUM (# of buttons)            
 		tempHidReportDescriptor[hidReportDescriptorSize++] = 0x29;
 		tempHidReportDescriptor[hidReportDescriptorSize++] = _buttonCount;
 
