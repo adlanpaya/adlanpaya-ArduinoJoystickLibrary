@@ -21,7 +21,8 @@
 #ifndef JOYSTICK_h
 #define JOYSTICK_h
 
-#include <internal/DynamicHID.h>
+#include "internal/DynamicHID.h"
+#include "internal/JoystickConstants.h"
 
 #if ARDUINO < 10606
 #error The Joystick library requires Arduino IDE 1.6.6 or greater. Please update your IDE.
@@ -42,18 +43,12 @@
 //================================================================================
 //  Joystick (Gamepad)
 
-#define JOYSTICK_DEFAULT_REPORT_ID         0x03
-#define JOYSTICK_DEFAULT_BUTTON_COUNT        32
 #define JOYSTICK_DEFAULT_AXIS_MINIMUM         0
 #define JOYSTICK_DEFAULT_AXIS_MAXIMUM      1023
 #define JOYSTICK_DEFAULT_SIMULATOR_MINIMUM    0
 #define JOYSTICK_DEFAULT_SIMULATOR_MAXIMUM 1023
-#define JOYSTICK_DEFAULT_HATSWITCH_COUNT      2
 #define JOYSTICK_HATSWITCH_COUNT_MAXIMUM      2
 #define JOYSTICK_HATSWITCH_RELEASE           -1
-#define JOYSTICK_TYPE_JOYSTICK             0x04
-#define JOYSTICK_TYPE_GAMEPAD              0x05
-#define JOYSTICK_TYPE_MULTI_AXIS           0x08
 
 class Joystick_
 {

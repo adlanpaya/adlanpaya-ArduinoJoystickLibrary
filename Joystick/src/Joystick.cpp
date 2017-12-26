@@ -19,6 +19,7 @@
 */
 
 #include "Joystick.h"
+#include "internal/HidReportDescriptorBuilder.h"
 
 #if defined(_USING_DYNAMIC_HID)
 
